@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Raptor.Core" Version="1.0.0-alpha4" />
+    <PackageReference Include="Raptor.Core.AspNetCore" Version="1.0.0-alpha3" />
+    <PackageReference Include="Raptor.Storage.Mongo" Version="1.0.0-alpha1" />
+  </ItemGroup>
+
+</Project>
