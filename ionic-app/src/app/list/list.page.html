@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of users">
+      <ion-thumbnail>
+        <img [src]="item.picture.thumbnail" />
+      </ion-thumbnail>
+      <div margin-horizontal>
+        <ion-label>{{ item.name.first }}</ion-label>
+        <ion-label>{{ item.name.last}}</ion-label>
+      </div>
+    </ion-item>
+  </ion-list>
+  <!--
+    <div *ngIf="selectedItem" padding>
+      You navigated here from <b>{{selectedItem.title }}</b>
+    </div>
+  -->
+</ion-content>
